@@ -1,0 +1,61 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 125vh;
+    background: linear-gradient(
+      to bottom,
+      white 0%,
+      #343230 55%,
+      #343230 60%,
+      #343230 100%
+    );  
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: 343230;
+    padding: 15px;
+    position: absolute;
+    bottom: 200px;
+    left: 10px;
+
+}
+
+.grid-item {
+    background-color: 343230;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.project-names {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+
+.project-origin {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+#project-description {
+    font-size: 25px;
+    color: white;
+    font-style: italic;
+}
+
+#project-description:hover {
+    color: pink;
+}
+
+.project-names:hover {
+    text-decoration: underline;
+    color: pink;
+}

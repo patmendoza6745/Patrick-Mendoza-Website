@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="resumeStyles.css">
+    <meta charset="UTF-8">
+    <meta name="author" content="Patrick Mendoza">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick's Personal Website Resume</title>
+</head>
+<body>
+    
+    <img id="resume" src="../Images/resume.png" alt="My resume">
+
+    <div class="interest-form box">
+        <form>
+            <h2>Interested in knowing more about me? Submit this interest form below!</h2>
+            <label>Name:</label>
+            <input type="text" id="answer1">
+            <br>
+            <br>
+            <label>Email:</label>
+            <input type="text" id="answer2">
+            <br>
+            <br>
+            <input id="submitted" class="button" type="submit">
+            <script>
+            document.getElementById("submitted").addEventListener("click", function (event) {
+                const input = answer1.value;
+                const input2 = answer2.value;
+                alert(`Thank you, ${input}. Your interest form has been submitted with email: ${input2}.`);
+                
+            });
+            </script>
+        </form>
+    </div>
+
+</body>
+</html>
